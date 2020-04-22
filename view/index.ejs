@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="<%=prefix%>/assets/static/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<%=prefix%>/assets/static/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<%=prefix%>/assets/static/img/favicon-16x16.png">
+  <link rel="manifest" href="<%=prefix%>/assets/static/img/site.webmanifest">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1532074_r429jhoxjf.css">
+  <title><%= title || 'Mind Map!' %></title>
+  <meta name="description" , content="<%= description || '' %>">
+  <script type="text/javascript">
+    !function (e) { if (/Android(?:\s+|\/)(\d+\.\d+)?/.test(navigator.userAgent)) { var t = parseFloat(RegExp.$1); if (t > 2.3) { var i = parseInt(window.screen.width) / e; document.write('<meta name="viewport" content="width=' + e + ",minimum-scale=" + i + ",maximum-scale=" + i + ', target-densitydpi=device-dpi">') } else { document.write('<meta name="viewport" content="width=' + e + ',target-densitydpi=device-dpi">') } } else { document.write('<meta name="viewport" content="width=' + e + ',user-scalable=no,target-densitydpi=device-dpi,minimal-ui,viewport-fit=cover">') } }(640);
+  </script>
+  <script>
+    window.ajaxHeader = {
+      'x-csrf-token': '<%=csrfToken%>',
+    }
+    window.CONFIG = {
+      env: '<%= env %>',
+      prefix: '<%=prefix%>',
+    }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>

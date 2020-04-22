@@ -1,0 +1,14 @@
+:root{
+  --bg-color: yellow;
+  --border-color: red;
+}
+
+.app11 {
+  font-family: helvetica, arial, sans-serif;
+  padding: 2em;
+  border: 5px solid var(--border-color);
+
+  & p {
+    background-color: var(--bg-color);
+  }
+}

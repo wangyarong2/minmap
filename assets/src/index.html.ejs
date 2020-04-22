@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="<%=prefix%>/assets/static/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<%=prefix%>/assets/static/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<%=prefix%>/assets/static/img/favicon-16x16.png">
+  <link rel="manifest" href="<%=prefix%>/assets/static/img/site.webmanifest">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1532074_r429jhoxjf.css">
+  <title><%= title || 'Mind Map!' %></title>
+  <meta name="description" , content="<%= description || '' %>">
+  <script>
+    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic3lzdGVtIiwiaWF0IjoxNTY5MzkzOTAzLCJleHAiOjE2MDA5Mjk5MDN9.NzCNFC_XHukFr9tW9JAsfjp12XGmuWMhFyCFbjNKP4g'
+    window.ajaxHeader = {
+      Authorization: 'Bearer ' + token,
+      'x-csrf-token': ''
+    }
+    window.CONFIG = {
+      prefix: '<%=prefix%>',
+    }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- Dependencies -->
+  <% if (webpackConfig.mode == 'production') { %>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.6/umd/react.production.min.js"
+    integrity="sha256-3vo65ZXn5pfsCfGM5H55X+SmwJHBlyNHPwRmWAPgJnM=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.6/umd/react-dom.production.min.js"
+    integrity="sha256-qVsF1ftL3vUq8RFOLwPnKimXOLo72xguDliIxeffHRc=" crossorigin="anonymous"></script>
+  <% } else { %>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.6/umd/react.development.js"
+    integrity="sha256-9H05eCUa5x4G28dytYBwoAXkR3XgPE3sCogyXhrINwo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.6/umd/react-dom.development.js"
+    integrity="sha256-I/ClrYyzlYEQkMUjqr7G3m/83znlycDCeI2xuBZsQx0=" crossorigin="anonymous"></script>
+  <% } %>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"
+    integrity="sha256-VeNaFBVDhoX3H+gJ37DpT/nTuZTdjYro9yBruHjVmoQ=" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+{
+    "0": {
+        "id": "0",
+        "text": "My Mind Map :)",
+        "childIds": [
+            "bcb8b209-3ba1-4771-8997-9b3eeea203a8",
+            "70a03e2d-bf57-4306-a423-3596060427d6",
+            "32e9a2b9-0785-4c22-8788-b78687c1e4f4"
+        ],
+        "parentId": ""
+    },
+    "bcb8b209-3ba1-4771-8997-9b3eeea203a8": {
+        "id": "bcb8b209-3ba1-4771-8997-9b3eeea203a8",
+        "text": "ewfawef",
+        "childIds": [
+            "8209ec39-1346-4e4a-95b8-dd734a3a4756",
+            "df43b085-34ce-42fa-8241-9b4a6683f8c3",
+            "f1bb5372-84c8-4191-9f10-55dc6b059e85"
+        ],
+        "parentId": "0",
+        "numberChild": true
+    },
+    "70a03e2d-bf57-4306-a423-3596060427d6": {
+        "id": "70a03e2d-bf57-4306-a423-3596060427d6",
+        "text": "wegafwawefweafawef",
+        "childIds": [
+            "d3812f05-7077-4691-b7b0-71e00d832473"
+        ],
+        "parentId": "0",
+        "numberChild": false
+    },
+    "d3812f05-7077-4691-b7b0-71e00d832473": {
+        "id": "d3812f05-7077-4691-b7b0-71e00d832473",
+        "text": "awefawef",
+        "childIds": [],
+        "parentId": "70a03e2d-bf57-4306-a423-3596060427d6",
+        "numberChild": false
+    },
+    "8209ec39-1346-4e4a-95b8-dd734a3a4756": {
+        "id": "8209ec39-1346-4e4a-95b8-dd734a3a4756",
+        "text": "efawefawe",
+        "childIds": [],
+        "parentId": "bcb8b209-3ba1-4771-8997-9b3eeea203a8",
+        "numberChild": false
+    },
+    "32e9a2b9-0785-4c22-8788-b78687c1e4f4": {
+        "id": "32e9a2b9-0785-4c22-8788-b78687c1e4f4",
+        "text": "",
+        "childIds": [],
+        "parentId": "0",
+        "numberChild": false
+    },
+    "bf3da85b-5968-4fa4-9567-912bf946b0d0": {
+        "id": "bf3da85b-5968-4fa4-9567-912bf946b0d0",
+        "text": "awefawef",
+        "childIds": [],
+        "parentId": "df43b085-34ce-42fa-8241-9b4a6683f8c3",
+        "numberChild": true
+    },
+    "f1bb5372-84c8-4191-9f10-55dc6b059e85": {
+        "id": "f1bb5372-84c8-4191-9f10-55dc6b059e85",
+        "text": "awefawef",
+        "childIds": [],
+        "parentId": "bcb8b209-3ba1-4771-8997-9b3eeea203a8",
+        "numberChild": false
+    },
+    "df43b085-34ce-42fa-8241-9b4a6683f8c3": {
+        "id": "df43b085-34ce-42fa-8241-9b4a6683f8c3",
+        "text": "",
+        "childIds": [
+            "bf3da85b-5968-4fa4-9567-912bf946b0d0",
+            "6c979091-8378-4bbf-9c64-f159201830f2",
+            "c0379962-2b16-48e0-8dcb-535702139067",
+            "802ca5a2-2c85-42d6-bdab-2b8329d7179c",
+            "2268036f-5be7-46fc-83f4-409ef0273fb3"
+        ],
+        "parentId": "bcb8b209-3ba1-4771-8997-9b3eeea203a8",
+        "numberChild": false
+    },
+    "6c979091-8378-4bbf-9c64-f159201830f2": {
+        "id": "6c979091-8378-4bbf-9c64-f159201830f2",
+        "text": "",
+        "childIds": [],
+        "parentId": "df43b085-34ce-42fa-8241-9b4a6683f8c3",
+        "numberChild": false
+    },
+    "c0379962-2b16-48e0-8dcb-535702139067": {
+        "id": "c0379962-2b16-48e0-8dcb-535702139067",
+        "text": "",
+        "childIds": [],
+        "parentId": "df43b085-34ce-42fa-8241-9b4a6683f8c3",
+        "numberChild": false
+    },
+    "802ca5a2-2c85-42d6-bdab-2b8329d7179c": {
+        "id": "802ca5a2-2c85-42d6-bdab-2b8329d7179c",
+        "text": "",
+        "childIds": [],
+        "parentId": "df43b085-34ce-42fa-8241-9b4a6683f8c3",
+        "numberChild": false
+    },
+    "2268036f-5be7-46fc-83f4-409ef0273fb3": {
+        "id": "2268036f-5be7-46fc-83f4-409ef0273fb3",
+        "text": "",
+        "childIds": [],
+        "parentId": "df43b085-34ce-42fa-8241-9b4a6683f8c3",
+        "numberChild": false
+    }
+}

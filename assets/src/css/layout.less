@@ -1,0 +1,298 @@
+:root {
+    --bg-color: #cccccc;
+    --border-color: red;
+}
+html {
+    height  : 100%;
+    overflow: hidden;
+}
+body {
+    height  : 100%;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    // color: var(--bg-color);
+}
+
+.blink_me {
+    animation: blinker 1s linear 2;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.app {
+    // border: 1px solid var(--border-color);
+}
+
+.main-theme {}
+
+.nav-top {
+    display: flex;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    >div {
+        margin-right: 10px;
+    }
+}
+
+.content-wrapper {
+    height: calc(100vh - 56px);
+    display: flex;
+}
+
+.outline-editor {
+    height: 100%;
+    // min-width: 290px;
+    flex: 1;
+    overflow: auto;
+}
+
+.outline-top {
+    height: 30px;
+    display: flex;
+}
+
+.outline-dragger {
+    cursor: col-resize;
+    width: 3px;
+    border-right: 1px solid #dcdcdc;
+}
+
+.outline-wrapper {
+    flex-basis: 50px;
+    flex-flow: column;
+    border-right: 1px solid #cccccc;
+    display: none;
+    &.showOutline {
+        display: flex;
+    }
+}
+
+.main-wrapper {
+    flex-grow: 1;
+    // margin: 56px 0 0;
+    position: relative;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mindmap-wrapper {
+    position: absolute;
+    width: fit-content;
+    // padding: 30vh 30vw;
+    will-change: transform;
+}
+
+.root-node-wrapper {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    /* max-content 才能保证正确读取布局 */
+}
+
+.sub-node-wrapper {
+    display: flex;
+    align-items: center;
+    &:hover{
+        .toggle_button {
+            display: block;
+        }
+    }
+}
+
+.input-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    min-width: 1em;
+    max-width: 10em;
+    height: fit-content;
+    margin: auto;
+    padding: 10px;
+    color: #333333;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px #aaaaaa;
+    border-radius: 10px;
+    outline: none;
+    z-index: 3;
+    user-select: text;
+}
+
+.line-canvas-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.toolbar-wrapper-nav {
+    display: flex;
+    width: max-content;
+    height: 50px;
+    padding: 0 8px;
+    font-size: 20px;
+}
+
+.toolbar-wrapper {
+    display: flex;
+    position: absolute;
+    bottom: calc(100% + 5px);
+    left: 0;
+    background-color: #ffffff;
+    width: max-content;
+    height: 50px;
+    padding: 0 8px;
+    font-size: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #aaaaaa;
+}
+
+.tool-button-wrapper {
+    margin: 0 0.12em;
+    padding: 0 0.24em;
+    /* margin 用于增加间隔，padding 用于增大可点击区域 */
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: fit-content;
+
+    i {
+        display: block;
+        margin-bottom: 0.12em;
+        font-size: 100%;
+    }
+
+    span {
+        display: block;
+        font-size: 25%;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+
+    &:hover {
+        // color: var(${refer.THEME_ASSIST})
+    }
+}
+
+.disabled_style {
+
+    &,
+    &:hover {
+        color: #cccccc;
+    }
+
+    cursor: not-allowed;
+}
+
+.left_style {
+    flex-direction: row-reverse;
+}
+
+.common_style {
+    position: relative;
+    min-width: 10px;
+    max-width: 200px;
+    margin: 20px 50px;
+    padding: 15px;
+    background-color: #ffffff;
+    // border: 1px solid var(${refer.THEME_MAIN});
+    border-radius: 15px;
+    cursor: pointer;
+
+    p {
+        min-height: 18px;
+        /* 当 p 中没有内容时撑起元素 */
+        margin: 0;
+        line-height: 1.5em;
+        overflow-wrap: break-word;
+    }
+
+    &:hover {
+        // ${style_selected_border}
+        .toggle_button {
+            display: block;
+        }
+    }
+
+    &.ondrag {
+
+        // background-color: var(${refer.THEME_EX});
+        p {
+            color: #ffffff;
+        }
+    }
+}
+
+.specific_style0 {
+    div& {
+        padding: 15px 20px;
+        color: #ffffff;
+        font-size: 120%;
+        font-weight: 700;
+    }
+}
+
+.specific_style1 {}
+
+.specific_style2 {}
+
+.specific_style3 {}
+
+.seleted_style {
+    z-index: 1;
+    /* 提高 Node 高度，防止被遮挡 */
+}
+
+.drop_area {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.toggle_button {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    margin: auto 0;
+    padding: 0;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    &.show_plus {
+        display: block;
+    }
+}
+
+.button_left {
+    left: -15px;
+}
+
+.button_right {
+    right: -15px;
+}
+
+div.hide_children {
+    // color: red;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}

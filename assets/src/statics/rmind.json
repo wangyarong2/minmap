@@ -1,0 +1,73 @@
+{
+    "id": "_rmind_root_node",
+    "text": "主题",
+    "showChildren": true,
+    "children": [{
+        "id": "_Sub1",
+        "text": "fwaefijaoiwejf",
+        "showChildren": true,
+        "children": []
+    }, {
+        "id": "_Sub2",
+        "text": "weifojawoijgojawfe",
+        "showChildren": true,
+        "children": [{
+            "id": "1562800548178",
+            "text": "1562800548178",
+            "children": []
+        }, {
+            "id": "1562800548366",
+            "text": "1562800548366",
+            "children": []
+        }, {
+            "id": "1562800548517",
+            "text": "1562800548517",
+            "children": []
+        }, {
+            "id": "1562800548662",
+            "text": "1562800548662",
+            "children": []
+        }],
+        "hideChildren": false
+    }, {
+        "id": "_Sub3",
+        "text": "oijewfoijawojgojawef",
+        "showChildren": true,
+        "children": []
+    }, {
+        "id": "_8d9570e36a4129aff17104e4a99c6123",
+        "text": "iweojfajwe",
+        "showChildren": true,
+        "children": [{
+            "id": "_479ff54bee39f0b85248396343c750f9",
+            "text": "新建节点",
+            "showChildren": false,
+            "children": [{
+                "id": "_7d32ff0f9b70885d60e206b088f7a490",
+                "text": "ewfawef",
+                "showChildren": true,
+                "children": [{
+                    "id": "_21db40590ce10d3cc2b0c364921cd339",
+                    "text": "awefawef",
+                    "showChildren": true,
+                    "children": []
+                }]
+            }]
+        }]
+    }, {
+        "id": "_c13ae75a07cfc1e09eee0d8368b7b238",
+        "text": "iewjfjawejf",
+        "showChildren": true,
+        "children": []
+    }, {
+        "id": "_3a0dcef7da53d2f40ac85a9fa99393cc",
+        "text": "iojgwjiwej",
+        "showChildren": true,
+        "children": []
+    }, {
+        "id": "_cb400255e37dcf0befa74900cfb796f6",
+        "text": "ijejfojwef",
+        "showChildren": true,
+        "children": []
+    }]
+}
