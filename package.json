@@ -36,7 +36,7 @@
     "moment": "^2.24.0",
     "qs": "^6.9.1",
     "react-color": "^2.17.3",
-    "ws": "^7.2.0"
+    "ws": "^7.4.6"
   },
   "devDependencies": {
     "ali-oss": "^6.2.1",
